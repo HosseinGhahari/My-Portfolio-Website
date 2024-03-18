@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@layer base {
+
+    @font-face {
+      font-family: YekanBakhMedium;
+      src: url(/Fonts/Yekan-Bakh-EN-05-Medium.ttf) format("truetype");
+      src: url(/Fonts/Yekan\ Bakh\ EN\ 05\ Medium.woff) format("woff");
+
+    }
+    @font-face {
+        font-family: YekanBakhBold;
+        src: url(/Fonts/Yekan-Bakh-EN-06-Bold.ttf) format("truetype");
+        src: url(/Fonts/Yekan\ Bakh\ EN\ 06\ Bold.woff) format("woff");
+      }
+    @font-face {
+      font-family: PoppinsMedium;
+      src: url(/Fonts/Poppins-Medium.ttf) format("truetype");
+
+    }  
+    @font-face {
+      font-family: PoppinsSemiBold;
+      src: url(/Fonts/Poppins-SemiBold.ttf) format("truetype");
+
+    }  
+}
+
+
+@keyframes bounce-left-right {
+  0%, 100% {
+    transform: translateX(-12%);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.bounce-left-right {
+  animation: bounce-left-right 2s infinite;
+}

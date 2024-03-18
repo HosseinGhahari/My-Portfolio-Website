@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dedicated ASP.NET Core Developer with a focus on crafting robust and efficient backend solutions. Discover my portfolio to see how I utilize ASP.NET Core, C#, and SQL Server to drive innovation and performance.">
+    <meta name="keywords" content="ASP.NET Core Developer, C# Programmer, .NET Developer, Backend Development, Web API, Entity Framework, SQL Server, RESTful Services, Software Engineering, MVC Architecture, hosseinghahari, portfolio, portfoliowebsite">
+    <link rel="canonical" href="http://hosseinghahari.ir/">
+    <meta property="og:title" content="Hossein Ghahari - Backend Developer">
+    <meta property="og:description" content="Welcome to my portfolio website">
+    <meta property="og:image" content="http://hosseinghahari.ir/Assets/Image/Me2.png">
+    <meta property="og:url" content="http://hosseinghahari.ir">
+    <meta name="og:card" content="summary_large_image">
+    <title>خوش آمدید</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-mycolor-background text-mymain-textcolor font-YekanBakhMedium">
+
+
+    
+    <!------------------------------------- Header ----------------------------------------->
+    <header class="nav__animation">
+        <nav class="container flex justify-between py-12 items-center">
+            <div class="mr-3.5 scroll-smooth">
+               <a href="#"></a> <img src="./Assets/Logo/Logo.png" class="cursor-pointer w-7 h-8 2xl:hover:animate-bounce ease-in-out lg:hover:animate-bounce " alt="Logo">
+            </div>
+            <div class="self-center">
+                <ul class="hidden lg:flex space-x-14 text-lg">
+                    <li class="list-none"><a href="#portfolio" class="no-underline hover:text-mycolor-primary ease-in duration-200 ">نمونه کار</a></li>
+                    <li class="list-none"><a href="#skills" class="no-underline hover:text-mycolor-primary ease-in duration-200">مهارت ها</a></li>
+                    <li class="list-none"><a href="#home" class="no-underline hover:text-mycolor-primary ease-in duration-200">درباره من</a></li>
+                </ul>
+            </div>
+            <div class="self-center hidden lg:flex">
+                <a href="/English.html" class="px-3 py-2.5 rounded-[18px] border border-mycolor-light-secondary">En</a>
+                <a href="https://hosseinghahari.ir/" class="bg-mycolor-primary px-4 py-2.5 rounded-[18px] text-white ml-3.5">فا</a>
+            </div>    
+
+             <!-- Mobile Screen -->
+             
+            <div id="hamburger" class="lg:hidden cursor-pointer items-center z-50 right-6 no-scroll" onclick="vote()">
+               <i class="fa-solid fa-bars"></i>
+            </div>      
+
+            <div id="menu" class="hidden bg-mycolor-primary h-[100vh] fixed inset-0 z-40 no-scroll">               
+                <ul class="h-full grid place-items-center py-24">
+                    <li class="list-none"><a id="hlink" href="#portfolio" class="no-underline text-white ">نمونه کار</a></li>
+                    <li class="list-none"><a id="hlink" href="#skills" class="no-underline text-white">مهارت ها</a></li>
+                    <li class="list-none"><a id="hlink" href="#home" class="no-underline text-white">درباره من</a></li>
+                    <div>
+                        <a href="/English.html" class="text-white px-3.5 py-2.5 rounded-[16px] border border-white">En</a>
+                        <a href="https://hosseinghahari.ir/" class= "text-mymain-textcolor bg-white px-4 py-2.5 rounded-[16px] ml-3.5">فا</a>
+                    </div>  
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+    <!------------------------------------- Home ----------------------------------------->
+        <section id="home">
+           <div class="container py-20 text-center">
+                <div dir="rtl" class="flex flex-col items-center | xl:flex-row md:flex-col md:justify-between">
+
+                    <div class="home__image xl:text-right lg:text-center mb-12 | md:text-center md:mt-10">
+                        <div class="inline-flex items-center gap-3 ">
+                            <h1 class="text-[26px] | xl:text-[36px] lg:text-[32px] md:text-[24px] ">سلام</h1>
+                            <img src="./Assets/Icon/HandIcon.svg" class="-rotate-12 2xl:hover:rotate-12 xl:hover:rotate-12 ease-in-out duration-500 lg:z-0 -z-10" alt="Image" width="39" height="38">
+                        </div>
+                        <div class="font-YekanBakhBold text-[32px] | lg:text-[42px] xl:text-[40px] md:text-[40px]">
+                            <h1>من <span class="text-mycolor-secondary">حسین</span> هستم <br>
+                            برنامه نویس جونیور بک اند.</h1>
+                            <img class="mb-3 | 2xl:mr-[19rem] xl:mr-[19rem] lg:mr-[22rem] md:mr-[19rem] mr-[16.5rem] " src="/Assets/Icon/arrow1.svg" alt="Image">
+                        </div>
+                        <p class="text-mysecondary-textcolor text-[18px] px-12 | 2xl:px-0 md:px-0 xl:text-xl/9 lg:text-[20px] md:text-[17px] ">   
+                        عاشق تکنولوژی هستم و تو این دنیای جذاب در رشته مهندسی نرم افزار <br class="2xl:block xl:block lg:block md:block hidden">
+                        تحصیل کردم ، از علاقه های اصلیم حل مسئله و خلق کردن هست.
+                        </p>
+                        <a href="#contact"><button class="w-28 h-[45px] border-[1.5px] rounded-[12px] mt-6 text-base | md:rounded-[16px] xl:w-40 xl:h-[60px] lg:w-36 lg:h-[54px]  md:w-32 md:h-[54px] xl:text-xl lg:text-xl md:text-lg border-mycolor-light-secondary font-YekanBakhBold  2xl:hover:bg-mycolor-secondary lg:hover:bg-mycolor-secondary 2xl:hover:text-mycolor-background lg:hover:text-mycolor-background ease-in duration-200 ">ارتباط با من</button></a>
+                    </div>
+                
+                    <div class="2xl:hover:scale-[1.04] lg:hover:scale-[1.04] ease-in-out duration-500 ">
+                        <img src="/Assets/Image/Me2.png" class="home__content w-[22.3rem] | lg:w-[26.3rem] md:w-[55rem]" alt="Image">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    <!------------------------------------- skills ----------------------------------------->
+        <section id="skills">
+            <div class="container py-20">
+                <div class="main__part text-center m-auto mb-10 flex flex-col items-center gap-3 ">
+                    <h3 class="font-YekanBakhBold text-4xl">مهارت ها</h3>
+                    <img class="" src="/Assets/Image/Line 2.svg" width="60" alt="Assets">
+                    <p class="font-YekanBakhMedium text-mysecondary-textcolor px-20 | 2xl:px-0 md:px-0">به عنوان یک برنامه‌نویس در حال رشد، هر روز به دنبال افزایش و تقویت<br class="2xl:block xl:block lg:block hidden">
+                        مهارت‌های خود در این زمینه هستم.
+                    </p>
+                </div>
+
+                <div class="place-items-center mt-16 grid | lg:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:grid-cols-6 xl:grid-cols-4 lg:gap-y-6 md:gap-y-6 gap-y-6">
+                    <div class="2xl:hover:scale-[1.08] lg:hover:scale-[1.08] ease-in-out duration-500">
+                        <div class="main__part relative border border-solid border-mycolor-light-secondary bg-mycolor-light-background h-[185px] w-[161px] rounded-[50px] flex flex-col items-center justify-center mb-6">
+                            <div class=" absolute -top-5 ">
+                                <img src="/Assets/Icon/SqlIcon.svg" class="ml-[6.5px]" width="45" height="45" alt="Icon">
+                            </div>
+                            <p class="font-PoppinsSemiBold text-xl mt-11">Sql Server</p>
+                            <div class="flex gap-1 mt-12">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/BorderDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/BorderDot.svg" alt="Assets">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="2xl:hover:scale-[1.08] lg:hover:scale-[1.08] ease-in-out duration-500">
+                        <div class="main__part relative border border-solid border-mycolor-light-secondary bg-mycolor-light-background h-[185px] w-[161px] rounded-[50px] flex flex-col items-center justify-center mb-6">
+                            <div class=" absolute -top-5 ">
+                                <img src="/Assets/Icon/CsharpIcon.svg" class="ml-[6.5px]" width="45" height="45" alt="Icon">
+                            </div>
+                            <p class="font-PoppinsSemiBold text-xl mt-11">C-Sharp</p>
+                            <div class="flex gap-1 mt-12">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/BorderDot.svg" alt="Assets">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="2xl:hover:scale-[1.08] lg:hover:scale-[1.08] ease-in-out duration-500">
+                        <div class="main__part relative border border-solid border-mycolor-light-secondary bg-mycolor-light-background h-[185px] w-[161px] rounded-[50px] flex flex-col items-center justify-center mb-6">
+                            <div class="absolute -top-5 ">
+                                <img src="/Assets/Icon/CoreIcon.svg" class="ml-[6.5px]" width="45" height="45" alt="Icon">
+                            </div>
+                            <p class="font-PoppinsSemiBold text-xl mt-11">Asp.Net Core</p>
+                            <div class="flex gap-1 mt-12">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/BorderDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/BorderDot.svg" alt="Assets">
+                            </div>
+                        </div>
+                    </div>               
+                    <div class="2xl:hover:scale-[1.08] lg:hover:scale-[1.08] ease-in-out duration-500">
+                        <div class="main__part relative border border-solid border-mycolor-light-secondary bg-mycolor-light-background h-[185px] w-[161px] rounded-[50px] flex flex-col items-center justify-center mb-6">
+                            <div class="absolute -top-5">
+                                <img src="/Assets/Icon/AdoIcon.svg" class="ml-[6.5px]" width="45" height="45" alt="Icon">
+                            </div>
+                            <p class="font-PoppinsSemiBold text-xl mt-11">Ado.Net</p>
+                            <div class="flex gap-1 mt-12">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/BorderDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/BorderDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/BorderDot.svg" alt="Assets">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="2xl:hover:scale-[1.08] lg:hover:scale-[1.08] ease-in-out duration-500">
+                        <div class="main__part relative border border-solid border-mycolor-light-secondary bg-mycolor-light-background h-[185px] w-[161px] rounded-[50px] flex flex-col items-center justify-center mb-6">
+                            <div class="absolute -top-5 ">
+                                <img src="/Assets/Icon/EntityIcon.svg" class="ml-[6.5px]" width="45" height="45" alt="Icon">
+                            </div>
+                            <p class="font-PoppinsSemiBold text-xl mt-11 text-center">Entity <br> FrameWork</p>
+                            <div class="flex gap-1 mt-12">
+                                <img src="/Assets/Icon/FillDot.svg" class="relative bottom-3.5" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" class="relative bottom-3.5"  alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" class="relative bottom-3.5"  alt="Assets">
+                                <img src="/Assets/Icon/BorderDot.svg"class="relative bottom-3.5" alt="Assets">
+                                <img src="/Assets/Icon/BorderDot.svg"class="relative bottom-3.5" alt="Assets">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="2xl:hover:scale-[1.08] lg:hover:scale-[1.08] ease-in-out duration-500">
+                        <div class="main__part relative border border-solid border-mycolor-light-secondary bg-mycolor-light-background h-[185px] w-[161px] rounded-[50px] flex flex-col items-center justify-center mb-6">
+                            <div class="absolute -top-5">
+                                <img src="/Assets/Icon/HtmlCssIcon.svg" class="ml-[6.5px]" width="45" height="45" alt="Icon">
+                            </div>
+                            <p class="font-PoppinsSemiBold text-xl mt-11">Html-Css</p>
+                            <div class="flex gap-1 mt-12">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/FillDot.svg" alt="Assets">
+                                <img src="/Assets/Icon/BorderDot.svg" alt="Assets">
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </section>
+
+    <!------------------------------------- portfolio ----------------------------------------->
+        <section id="portfolio">
+            <div class="container py-20 ">
+                
+                <div class="main__part text-center m-auto mb-10 flex flex-col items-center gap-3">
+                    <h3 class="font-YekanBakhBold text-4xl">نمونه کارها</h3>
+                    <img class="" src="/Assets/Image/Line 2.svg" width="60" alt="Assets">
+                    <p class="font-YekanBakhMedium text-mysecondary-textcolor px-12 | 2xl:px-0 md:px-0 md:text-[18px]">
+                        تمامی تمرین‌ ها و نمونه‌کارهایی که با استفاده از زبان برنامه‌نویسی سی شارپ ایجاد کرده ام <br class="2xl:block xl:block lg:block hidden">
+                          در فضای گیت‌هاب من قرار گرفته‌اند ، از شما دعوت
+                         می‌کنم که به گیت‌هاب من سر بزنید
+                    </p>
+                </div>
+
+                <div dir="rtl" class="main__part flex justify-center items-center bg-mycolor-light-background border border-mycolor-light-secondary rounded-[50px] text-center h-[320px] gap-y-6 flex-col | 2xl:flex-row 2xl:h-[208px] 2xl:gap-x-10 2xl:text-right xl:flex-col md:h-96 ">
+                    <div>
+                        <h3 class="font-YekanBakhBold text-[1.75rem] mb-2">به گیت هاب خوش آمدید</h3>
+                        <p class="font-YekanBakhMedium text-lg text-mysecondary-textcolor px-7 | 2xl:px-0 md:px-0 md:text-[1.13rem] ">
+                            در فضای گیت هاب، تلاش کردم تا حتی کوچک ترین بخش های تمرینات<br class="2xl:block xl:block lg:block  hidden"> و تجربه هایم را نیز 
+                            قرار دهم، در آینده قصد دارم نمونه کارهای بیشتری  <br class="2xl:block xl:block lg:block hidden">را به این مجموعه اضافه کنم
+                        </p>
+                    </div>
+                
+                    <img src="/Assets/Image/GitHub.png" class="relative top-6 hidden | 2xl:block" alt="Image" width="153" height="161">
+                    <img src="/Assets/Icon/GitArrow.svg" class="bounce-left-right" alt="Icon" width="131">
+                    <a href="https://github.com/HosseinGhahari" target="_blank"><button class="font-YekanBakhBold text-white w-28 h-[45px] bg-mycolor-primary rounded-[12px] text-base | xl:w-40 xl:h-[60px] xl:text-xl lg:text-xl lg:w-36 lg:h-[54px] md:w-32 md:h-[54px] md:text-lg md:rounded-[16px] ">گیت هاب من</button></a>
+                </div>
+
+            </div>
+        </section>
+
+    <!------------------------------------- contact ----------------------------------------->
+        <section id="contact">
+                <div class="container py-20 ">
+                    
+                    <div class="main__part text-center m-auto mb-10 flex flex-col items-center gap-3">
+                        <h3 class="font-YekanBakhBold text-4xl">ارتباط با من</h3>
+                        <img class="" src="/Assets/Image/Line 2.svg" width="60" alt="Assets">
+                        <p class="font-YekanBakhMedium text-mysecondary-textcolor px-16 | 2xl:px-0 md:px-0 md:text-[18px]">
+                            باعث افتخار و خوشحالی هست که در صورت تمایل با هم در مورد مسائل<br class="2xl:block xl:block lg:block hidden">
+                            کاری و تخصصی تبادل نظر و همکاری داشته باشیم
+                        </p>
+                    </div>
+
+
+                    <div class="flex flex-col justify-center items-center gap-y-8">
+                        <div class="2xl:hover:border-mycolor-primary 2xl:hover:scale-110 xl:hover:border-mycolor-primary xl:hover:scale-110 ease-in-out duration-500 delay-200">
+                            <div class="main__part flex flex-row border gap-x-10 py-9 px-14 rounded-[36px] border-mycolor-light-secondary 2xl:hover:border-mycolor-primary 2xl:hover:scale-110 xl:hover:border-mycolor-primary xl:hover:scale-110 ease-in-out duration-500 delay-200 ">
+                                <a href="https://wa.me/qr/DOUETPF6WL7AP1" class="2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer">
+                                    <img src="/Assets/Icon/WhatsappIcon.svg" class="main__part 2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer" alt="Icon">
+                                </a>
+                                <a href="https://t.me/Hossein_ghahari" class="2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer">
+                                    <img src="/Assets/Icon/TelegramIcon.svg" class="main__part 2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer" alt="Icon">
+                                </a>
+                                <a href="https://linkedin.com/in/hosseinghahari" class="2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer">
+                                    <img src="/Assets/Icon/LinkedinIcon.svg" class="main__part 2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer" alt="Image">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <img src="/Assets/Icon/ArrowDown.svg" class="main__part" alt="Assets">
+                        <div dir="rtl">
+                            <form id="myform" novalidate class="group" method="post">
+                                <div class="mb-7 flex flex-col gap-y-7 justify-center items-center">
+                                    <div class="main__part">
+                                        <input 
+                                        type="text" 
+                                        id="Name" 
+                                        name="Name" 
+                                        placeholder = "نام خود را وارد کنید ..." 
+                                        required 
+                                        pattern=".{3,30}"
+                                        class="peer text-right border rounded-[20px] border-mycolor-light-secondary bg-mycolor-light-background 
+                                        2xl:w-[540px] xl:w-[540px] lg:w-[540px] w-[326px] h-[63px] pr-6 focus:outline-mycolor-secondary 
+                                        2xl:focus:scale-105 xl:focus:scale-105 ease-in-out duration-500">
+                                        <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+                                            لطفا نام خود به درستی وارد کنید
+                                        </span>
+                                    </div>
+                                    <div class="main__part">
+                                        <input 
+                                        type="email" 
+                                        id="Email" 
+                                        name="Email" 
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                        placeholder = "ایمیل خود را وارد کنید ..." 
+                                        required 
+                                        class="peer text-right border rounded-[20px] border-mycolor-light-secondary bg-mycolor-light-background 
+                                         2xl:w-[540px] xl:w-[540px] lg:w-[540px] w-[326px] h-[63px] pr-6 focus:outline-mycolor-secondary 
+                                         2xl:focus:scale-105 xl:focus:scale-105 ease-in-out duration-500">
+                                         <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+                                            لطفا ایمیل خود را به درستی وارد کنید
+                                        </span>
+                                    </div>
+                                    <div class="main__part">
+                                        <input
+                                         type="text" 
+                                         id="Body" 
+                                         name="Body" 
+                                         placeholder = "پیام خود را وارد کنید ..." 
+                                         required 
+                                         class="peer text-right border rounded-[20px] border-mycolor-light-secondary
+                                          bg-mycolor-light-background  2xl:w-[540px] xl:w-[540px] lg:w-[540px] w-[326px] 
+                                           h-[280px] pr-6 pb-52 focus:outline-mycolor-secondary 2xl:focus:scale-105
+                                           xl:focus:scale-105 ease-in-out duration-500">  
+                                           <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+                                            لطفا پیام خود را وارد کنید
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="main__part text-center">
+                                    <button id="SendEmail" type="submit" class="group-invalid:pointer-events-none group-invalid:opacity-60 mt-9 font-YekanBakhBold text-white w-28 h-[45px] bg-mycolor-primary rounded-[12px] text-base | 2xl:hover:scale-110 xl:hover:scale-110 ease-in-out duration-500 xl:w-40 xl:h-[60px] xl:text-xl lg:text-xl lg:w-36 lg:h-[54px] md:w-32 md:h-[54px] md:text-lg md:rounded-[16px] ">ارسال پیام</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        
+    <!------------------------------------- footer ----------------------------------------->       
+       
+        <footer id="footer" dir="rtl" class="main__part">   
+            <div class="container py-20">
+                <div class="main__part flex justify-between text-center | 2xl:text-right 2xl:flex-row xl:text-right xl:items-center xl:flex-row lg:flex-row lg:text-right md:flex-col lg:gap-x-4 flex-col">
+                    <div>
+                        <div class="flex items-center gap-x-4 text-center justify-center | 2xl:justify-start 2xl:text-right 2xl:flex-row xl:justify-start xl:flex-row lg:justify-start md:justify-center md:flex-row flex-col">
+                            <img src="/Assets/Logo/Logo.png" width="26" height="30" alt="Logo">
+                            <h3 class="font-YekanBakhBold text-[22px]">هدف من در حال حاضر</h3>
+                        </div>
+                        <p class="text-mysecondary-textcolor mt-5 px-7 | 2xl:px-0 md:px-0 ">
+                            مدتی هست که برنامه نویسی در حوزه وب را به صورت جدی و در حال <br
+                                class="2xl:block xl:block lg:block  hidden">
+                            یادگیری هستم و در حال حاضر به دنبال موقعیت کاری <span class="text-mycolor-primary font-YekanBakhBold">جونیور</span> و یا
+                            <span class="text-mycolor-primary font-YekanBakhBold">کارآموزی</span> هستم <br
+                                class="2xl:block xl:block lg:block hidden">
+                            همچنین به دنبال فضایی هستم که بتونم درونش یاد بگیرم، رشد کنم و از همه مهمتر<br class="2xl:block xl:block lg:block hidden">
+                            در حد توانم به بقیه اعضای تیم کمک کنم.
+                        </p>
+                        <div class="flex flex-row gap-x-4 mt-5 items-center justify-center | 2xl:justify-start xl:justify-start lg:justify-start ">
+                            <img src="/Assets/Icon/LocationIcon.svg" alt="Icon">
+                            <p>مازندران - تهران</p>
+                        </div>
+                    </div>
+            
+                    <div class="main__part flex flex-col text-center gap-y-3 text-mysecondary-textcolor items-center | 2xl:mt-0 xl:mt-0 lg:mt-0 mt-10">
+                        <h3 class="text-mymain-textcolor font-YekanBakhBold text-[22px] | md:text-[20px]">دسترسی سریع</h3>
+                        <img src="/Assets/Icon/ArrowFooterGreen.svg" class="mb-2" width="60" alt="Assets">
+                        <a href="#" class="2xl:hover:text-mycolor-secondary ease-in-out duration-500">درباره من</a>
+                        <a href="#skills" class="2xl:hover:text-mycolor-secondary ease-in-out duration-500">مهارت ها</a>
+                        <a href="#portfolio" class="2xl:hover:text-mycolor-secondary ease-in-out duration-500">نمونه کارها</a>
+                        <a href="https://github.com/HosseinGhahari" target="_blank" class="2xl:hover:text-mycolor-secondary ease-in-out duration-500">پورتفولیو</a>
+                    </div>
+
+                    <div class="main__part flex flex-col text-center gap-y-3 text-mysecondary-textcolor items-center | 2xl:mt-0 xl:mt-0 lg:mt-0 mt-10">
+                        <h3 class="text-mymain-textcolor font-YekanBakhBold text-[22px] | md:text-[20px]">ارتباط با من</h3>
+                        <img src="/Assets/Icon/ArrowFooterBlue.svg" class="mb-2"  width="54" alt="Assets">
+                        <a href="https://t.me/Hossein_ghahari" target="_blank" class="2xl:hover:text-mycolor-primary ease-in-out duration-500">تلگرام</a>
+                        <a href="https://wa.me/qr/DOUETPF6WL7AP1" target="_blank" class="2xl:hover:text-mycolor-primary ease-in-out duration-500">واتس اپ</a>
+                        <a href="https://linkedin.com/in/hosseinghahari" target="_blank" class="2xl:hover:text-mycolor-primary ease-in-out duration-500">لینکدین</a>
+                        <a href="https://github.com/HosseinGhahari" target="_blank" class="2xl:hover:text-mycolor-primary ease-in-out duration-500">گیت هاب</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items-center mt-3 mb-6 pb-0">
+                <div class="main__part justify-center flex flex-row items-center mt-7 gap-x-4">
+                    <div>
+                        <img src="/Assets/Icon/ArrowLong.svg" alt="Assets" class="2xl:w-[640px] xl:w-[500px] w-[1px]">
+                    </div>
+                    <div>
+                        <p class="font-PoppinsMedium text-[12px] text-mysecondary-textcolor">Thank You For Visting</p>
+                    </div>
+                    <div>
+                        <img src="/Assets/Icon/ArrowLong.svg" alt="Assets" class="2xl:w-[640px] xl:w-[500px] w-[1px]">
+                    </div>
+                </div>
+                
+                <div class="main__part flex justify-center mt-3">
+                    <img src="/Assets/Icon/HeartIcon.svg" alt="Icon">
+                </div>
+            </div>
+        </footer>
+        
+    </main>
+
+    
+
+
+
+    <!-------------------------------- js for mobile nav bar size & some animation ------------------------------------->       
+
+    <script>
+
+        const main = document.querySelector('#main');
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hlink = document.querySelectorAll('#hlink');
+        const fasolid = document.querySelector(".fa-solid");
+        var upVoteBtn = document.getElementById("hamburger");
+        var btnToogle = true;
+
+        function vote(){
+            if(btnToogle){
+                upVoteBtn.style.color = "white";
+                btnToogle = false;       
+            }else{
+                upVoteBtn.style.color = null;
+                btnToogle = true;
+            }
+        }
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            document.body.classList.toggle('no-scroll');
+            hamburger.classList.toggle('fixed');
+            fasolid.classList.toggle('fa-xmark');
+            main.classList.toggle('hidden');
+
+        })
+        
+
+        hlink.forEach(link => {
+            link.addEventListener('click',() => {
+            menu.classList.toggle('hidden');   
+            document.body.classList.remove('no-scroll'); 
+            hamburger.classList.toggle('fixed');
+            fasolid.classList.toggle('fa-xmark');
+            main.classList.remove('hidden');
+            vote();
+            })
+        })
+
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script src="api.js"></script>
+
+</body>
+
+</html>
