@@ -11,7 +11,7 @@ form.addEventListener('submit',async (e) =>{
     const name = document.querySelector('#Name').value;
     const email = document.querySelector('#Email').value;
     const body = document.querySelector('#Body').value;
-    
+    var AlertMessage = document.getElementById('AlertMessage');
     const data ={
         name,
         email,
@@ -30,7 +30,15 @@ form.addEventListener('submit',async (e) =>{
 
         if (response.ok){
             console.log('ایمیل با موفقیت ارسال شد');
-            alert("ایمیل با موفقیت ارسال شد")
+            AlertMessage.style.visibility = 'visible';
+        
+            setTimeout(() => {
+                AlertMessage.style.top ='0';
+            }, 100);
+            setTimeout(() => {
+                AlertMessage.style.top = '-100px'
+            }, 3600);
+            
         }
         else{
             console.error('عملیات موفقیت آمیز نبود');

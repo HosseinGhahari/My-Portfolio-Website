@@ -32,6 +32,8 @@
 }
 
 
+/* Animation For Github Link Arrow Icon */
+
 @keyframes bounce-left-right {
   0%, 100% {
     transform: translateX(-12%);
@@ -45,4 +47,15 @@
 
 .bounce-left-right {
   animation: bounce-left-right 2s infinite;
+}
+
+
+/* SlideDown Animation When Email is Sent */
+
+#AlertMessage {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  transition: top 1s ease-in-out;
+  visibility: hidden;
 }

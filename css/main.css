@@ -660,6 +660,10 @@ video {
   z-index: -10;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -794,6 +798,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-8 {
@@ -1170,6 +1178,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-mycolor-background {
+  --tw-text-opacity: 1;
+  color: rgb(252 252 252 / var(--tw-text-opacity));
+}
+
 .text-mycolor-primary {
   --tw-text-opacity: 1;
   color: rgb(50 103 227 / var(--tw-text-opacity));
@@ -1237,6 +1250,8 @@ video {
   overflow: hidden;
 }
 
+/* Animation For Github Link Arrow Icon */
+
 @keyframes bounce-left-right {
   0%, 100% {
     transform: translateX(-12%);
@@ -1251,6 +1266,16 @@ video {
 
 .bounce-left-right {
   animation: bounce-left-right 2s infinite;
+}
+
+/* SlideDown Animation When Email is Sent */
+
+#AlertMessage {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  transition: top 1s ease-in-out;
+  visibility: hidden;
 }
 
 .hover\:text-mycolor-primary:hover {
