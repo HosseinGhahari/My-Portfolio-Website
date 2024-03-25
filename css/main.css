@@ -1178,6 +1178,14 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
+.text-\[2\.2rem\] {
+  font-size: 2.2rem;
+}
+
 .text-mycolor-background {
   --tw-text-opacity: 1;
   color: rgb(252 252 252 / var(--tw-text-opacity));
@@ -1486,6 +1494,10 @@ video {
     line-height: 1.75rem;
   }
 
+  .lg\:text-\[3\.5rem\] {
+    font-size: 3.5rem;
+  }
+
   .hover\:lg\:scale-150:hover {
     --tw-scale-x: 1.5;
     --tw-scale-y: 1.5;
@@ -1600,6 +1612,10 @@ video {
   .xl\:text-xl\/9 {
     font-size: 1.25rem;
     line-height: 2.25rem;
+  }
+
+  .xl\:text-\[4rem\] {
+    font-size: 4rem;
   }
 
   .xl\:hover\:rotate-12:hover {
