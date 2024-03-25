@@ -7,7 +7,7 @@
     <meta name="keywords" content="ASP.NET Core Developer, C# Programmer, .NET Developer, Backend Development, Web API, Entity Framework, SQL Server, RESTful Services, Software Engineering, MVC Architecture, hosseinghahari, portfolio, portfoliowebsite">
     <link rel="canonical" href="http://hosseinghahari.ir/">
     <meta property="og:title" content="Hossein Ghahari - Backend Developer">
-    <meta property="og:description" content="Welcome to my portfolio website">
+    <meta property="og:description" content="Welcome to my portfolio website - I'm so glad to see you here">
     <meta property="og:image" content="http://hosseinghahari.ir/Assets/Image/Me2.png">
     <meta property="og:url" content="http://hosseinghahari.ir">
     <meta name="og:card" content="summary_large_image">
@@ -244,13 +244,13 @@
                     <div class="flex flex-col justify-center items-center gap-y-8">
                         <div class="2xl:hover:border-mycolor-primary 2xl:hover:scale-110 xl:hover:border-mycolor-primary xl:hover:scale-110 ease-in-out duration-500 delay-200">
                             <div class="main__part flex flex-row border gap-x-10 py-9 px-14 rounded-[36px] border-mycolor-light-secondary 2xl:hover:border-mycolor-primary 2xl:hover:scale-110 xl:hover:border-mycolor-primary xl:hover:scale-110 ease-in-out duration-500 delay-200 ">
-                                <a href="https://wa.me/qr/DOUETPF6WL7AP1" class="2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer">
+                                <a href="https://wa.me/qr/DOUETPF6WL7AP1" target="_blank" class="2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer">
                                     <img src="/Assets/Icon/WhatsappIcon.svg" class="main__part 2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer" alt="Icon">
                                 </a>
-                                <a href="https://t.me/Hossein_ghahari" class="2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer">
+                                <a href="https://t.me/Hossein_ghahari" target="_blank" class="2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer">
                                     <img src="/Assets/Icon/TelegramIcon.svg" class="main__part 2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer" alt="Icon">
                                 </a>
-                                <a href="https://linkedin.com/in/hosseinghahari" class="2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer">
+                                <a href="https://linkedin.com/in/hosseinghahari" target="_blank" class="2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer">
                                     <img src="/Assets/Icon/LinkedinIcon.svg" class="main__part 2xl:hover:scale-125 hover:lg:scale-150 ease-in-out duration-500 cursor-pointer" alt="Image">
                                 </a>
                             </div>
@@ -308,7 +308,7 @@
                                 </div>
 
                                 <div class="main__part text-center">
-                                    <button id="SendEmail" type="submit" class="group-invalid:pointer-events-none group-invalid:opacity-60 mt-9 font-YekanBakhBold text-white w-28 h-[45px] bg-mycolor-primary rounded-[12px] text-base | 2xl:hover:scale-110 xl:hover:scale-110 ease-in-out duration-500 xl:w-40 xl:h-[60px] xl:text-xl lg:text-xl lg:w-36 lg:h-[54px] md:w-32 md:h-[54px] md:text-lg md:rounded-[16px] ">ارسال پیام</button>
+                                    <button id="SendEmail" type="submit" value="submit" class="group-invalid:pointer-events-none group-invalid:opacity-60 mt-9 font-YekanBakhBold text-white w-28 h-[45px] bg-mycolor-primary rounded-[12px] text-base | 2xl:hover:scale-110 xl:hover:scale-110 ease-in-out duration-500 xl:w-40 xl:h-[60px] xl:text-xl lg:text-xl lg:w-36 lg:h-[54px] md:w-32 md:h-[54px] md:text-lg md:rounded-[16px] ">ارسال پیام</button>
                                 </div>
                             </form>
                         </div>
@@ -409,6 +409,14 @@
             }
         }
 
+        document.getElementById('myform').addEventListener('submit',function(e){
+            e.preventDefault();
+            document.getElementById('Name').value = '';
+            document.getElementById('Email').value = '';
+            document.getElementById('Body').value = '';
+        })
+
+
         hamburger.addEventListener("click", () => {
             menu.classList.toggle('hidden');
             document.body.classList.toggle('no-scroll');
@@ -418,7 +426,6 @@
 
         })
         
-
         hlink.forEach(link => {
             link.addEventListener('click',() => {
             menu.classList.toggle('hidden');   
