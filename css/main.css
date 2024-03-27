@@ -1142,6 +1142,10 @@ video {
   font-size: 18px;
 }
 
+.text-\[2\.2rem\] {
+  font-size: 2.2rem;
+}
+
 .text-\[22px\] {
   font-size: 22px;
 }
@@ -1152,10 +1156,6 @@ video {
 
 .text-\[32px\] {
   font-size: 32px;
-}
-
-.text-\[4rem\] {
-  font-size: 4rem;
 }
 
 .text-base {
@@ -1176,14 +1176,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[2rem\] {
-  font-size: 2rem;
-}
-
-.text-\[2\.2rem\] {
-  font-size: 2.2rem;
 }
 
 .text-mycolor-background {
@@ -1481,6 +1473,10 @@ video {
     font-size: 20px;
   }
 
+  .lg\:text-\[3\.5rem\] {
+    font-size: 3.5rem;
+  }
+
   .lg\:text-\[32px\] {
     font-size: 32px;
   }
@@ -1492,10 +1488,6 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-\[3\.5rem\] {
-    font-size: 3.5rem;
   }
 
   .hover\:lg\:scale-150:hover {
@@ -1604,6 +1596,10 @@ video {
     font-size: 40px;
   }
 
+  .xl\:text-\[4rem\] {
+    font-size: 4rem;
+  }
+
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1612,10 +1608,6 @@ video {
   .xl\:text-xl\/9 {
     font-size: 1.25rem;
     line-height: 2.25rem;
-  }
-
-  .xl\:text-\[4rem\] {
-    font-size: 4rem;
   }
 
   .xl\:hover\:rotate-12:hover {

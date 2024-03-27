@@ -20,6 +20,8 @@ form.addEventListener('submit',async (e) =>{
 
     try{
 
+        clearFormOnSubmit();
+
         const response = await fetch('https://emailapi.liara.run/SendEmail',{
             method:'POST',
             headers: {

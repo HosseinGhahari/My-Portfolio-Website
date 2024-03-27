@@ -23,7 +23,7 @@
     <!------------------------------------- Email Alert ----------------------------------------->       
 
     <div id="AlertMessage" class="bg-mycolor-primary | h-20 flex text-center items-center justify-center z-10">
-        <p class="text-mycolor-background text-[18px] font-YekanBakhBold">ایمیل باید موفقیت ارسال شد</p>
+        <p class="text-mycolor-background text-[18px] font-YekanBakhBold">ایمیل با موفقیت ارسال شد</p>
     </div>
     
     <!------------------------------------- Header ----------------------------------------->
@@ -394,7 +394,6 @@
 
 
 
-
     <!-------------------------------- js for mobile nav bar size & some animation ------------------------------------->       
 
     <script>
@@ -417,13 +416,6 @@
             }
         }
 
-        document.getElementById('myform').addEventListener('submit',function(e){
-            e.preventDefault();
-            document.getElementById('Name').value = '';
-            document.getElementById('Email').value = '';
-            document.getElementById('Body').value = '';
-        })
-
 
         hamburger.addEventListener("click", () => {
             menu.classList.toggle('hidden');
@@ -444,6 +436,19 @@
             vote();
             })
         })
+
+
+        // This function clear the form input after submit and it's called in api.js
+
+        function clearFormOnSubmit() {
+        document.getElementById('Name').value = '';
+        document.getElementById('Email').value = '';
+        document.getElementById('Body').value = '';
+
+        };
+
+
+
 
     </script>
 
