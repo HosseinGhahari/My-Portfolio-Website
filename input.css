@@ -52,7 +52,24 @@
 
 /* SlideDown Animation When Email is Sent */
 
-#AlertMessage {
+
+#BoxAlert {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  transition: top 1s ease-in-out;
+  visibility: hidden;
+}
+
+#WaitMessage {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  transition: top 1s ease-in-out;
+  visibility: hidden;
+}
+
+#SentMessage {
   position: fixed;
   top: -100px;
   width: 100%;
