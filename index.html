@@ -253,7 +253,6 @@
                         </p>
                     </div>
 
-
                     <div class="flex flex-col justify-center items-center gap-y-8">
                         <div class="2xl:hover:border-mycolor-primary 2xl:hover:scale-110 xl:hover:border-mycolor-primary xl:hover:scale-110 ease-in-out duration-500 delay-200">
                             <div class="main__part flex flex-row border gap-x-10 py-9 px-14 rounded-[36px] border-mycolor-light-secondary 2xl:hover:border-mycolor-primary 2xl:hover:scale-110 xl:hover:border-mycolor-primary xl:hover:scale-110 ease-in-out duration-500 delay-200 ">
@@ -304,17 +303,10 @@
                                         </span>
                                     </div>
                                     <div class="main__part">
-                                        <input
-                                         type="text" 
-                                         id="Body" 
-                                         name="Body" 
-                                         placeholder = "پیام خود را وارد کنید ..." 
-                                         required 
-                                         class="peer text-right border rounded-[20px] border-mycolor-light-secondary
-                                          bg-mycolor-light-background  2xl:w-[540px] xl:w-[540px] lg:w-[540px] w-[326px] 
-                                           h-[280px] pr-6 pb-52 focus:outline-mycolor-secondary 2xl:focus:scale-105
-                                           xl:focus:scale-105 ease-in-out duration-500">  
-                                           <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+                                        <textarea maxlength="700" id="Body" name="Body" placeholder="پیام خود را وارد کنید ..." required class="peer text-right border rounded-[20px]
+                                        border-mycolor-light-secondary bg-mycolor-light-background 2xl:w-[540px] xl:w-[540px] lg:w-[540px] w-[326px] h-[280px] pr-6 pb-52 pt-4
+                                        focus:outline-mycolor-secondary 2xl:focus:scale-105 xl:focus:scale-105 ease-in-out duration-500 resize-none"></textarea>
+                                        <span class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
                                             لطفا پیام خود را وارد کنید
                                         </span>
                                     </div>
@@ -413,6 +405,24 @@
         const fasolid = document.querySelector(".fa-solid");
         var upVoteBtn = document.getElementById("hamburger");
         var btnToogle = true;
+
+        
+        // This code prevents the form from being submitted when the Enter key is pressed
+
+        var ids = ["Name","Email"];
+        ids.forEach(function(id){
+            var element = document.getElementById(id)
+            if (element){
+                element.onkeypress = function(e){
+                    var key = e.charCode || e.keyCode || 0;
+                    if (key == 13){
+                        e.preventDefault();
+                    }
+                }
+            }
+        });
+ 
+
 
         function vote(){
             if(btnToogle){
